@@ -1,0 +1,169 @@
+[
+    {
+        "field": "Дата операции",
+        "name": "operation_date",
+        "title": "Operation date",
+        "raw_data_type": "string",
+        "data_type": "datetime64[ns]",
+        "convert_info": {
+          "name": "datetime",
+          "format": "%d.%m.%Y %H:%M:%S"
+        },
+        "fill_value": "Unknown",
+        "value_required": true
+    },
+    {
+        "field": "Дата платежа",
+        "name": "payment_date",
+        "title": "Payment date",
+        "raw_data_type": "string",
+        "data_type": "datetime64[ns]",
+        "convert_info": {
+          "name": "datetime",
+          "format": "%d.%m.%Y"
+        },
+        "fill_value": "Unknown",
+        "value_required": false
+    },
+    {
+        "field": "Номер карты",
+        "name": "card_number",
+        "title": "Card number",
+        "raw_data_type": "string",
+        "data_type": "string",
+        "convert_info": null,
+        "fill_value": "Unknown",
+        "value_required": false
+    },
+    {
+        "field": "Статус",
+        "name": "status",
+        "title": "Status",
+        "raw_data_type": "string",
+        "data_type": "string",
+        "convert_info": null,
+        "fill_value": "Unknown",
+        "value_required": false
+    },
+    {
+        "field": "Сумма операции",
+        "name": "operation_total",
+        "title": "Operation total",
+        "raw_data_type": "float64",
+        "data_type": "float64",
+        "convert_info": null,
+        "fill_value": 0.0,
+        "value_required": true
+    },
+    {
+        "field": "Валюта операции",
+        "name": "operation_currency",
+        "title": "Operation currency",
+        "raw_data_type": "string",
+        "data_type": "string",
+        "convert_info": null,
+        "fill_value": "Unknown",
+        "value_required": true
+    },
+    {
+        "field": "Сумма платежа",
+        "name": "payment_total",
+        "title": "Payment total",
+        "raw_data_type": "float64",
+        "data_type": "float64",
+        "convert_info": null,
+        "fill_value": 0.0,
+        "value_required": false
+    },
+    {
+        "field": "Валюта платежа",
+        "name": "payment_currency",
+        "title": "Payment currency",
+        "raw_data_type": "string",
+        "data_type": "string",
+        "convert_info": null,
+        "fill_value": "Unknown",
+        "value_required": false
+    },
+    {
+        "field": "Кэшбэк",
+        "name": "cashback",
+        "title": "Cashback",
+        "raw_data_type": "float64",
+        "data_type": "float64",
+        "convert_info": null,
+        "fill_value": 0.0,
+        "value_required": false
+    },
+    {
+        "field": "Категория",
+        "name": "category",
+        "title": "Category",
+        "raw_data_type": "string",
+        "data_type": "string",
+        "convert_info": null,
+        "fill_value": "Unknown",
+        "value_required": true
+    },
+    {
+        "field": "MCC",
+        "name": "mcc_code",
+        "title": "MCC code",
+        "raw_data_type": "Int64",
+        "data_type": "Int64",
+        "convert_info": null,
+        "fill_value": 0,
+        "value_required": false
+    },
+    {
+        "field": "Описание",
+        "name": "description",
+        "title": "Description",
+        "raw_data_type": "string",
+        "data_type": "string",
+        "convert_info": null,
+        "fill_value": "Unknown",
+        "value_required": false
+    },
+    {
+        "field": "Бонусы (включая кэшбэк)",
+        "name": "bonus",
+        "title": "Bonus",
+        "raw_data_type": "float64",
+        "data_type": "float64",
+        "convert_info": null,
+        "fill_value": 0.0,
+        "value_required": false
+    },
+    {
+        "field": "Округление на инвесткопилку",
+        "name": "moneybox_rounding",
+        "title": "Moneybox rounding",
+        "raw_data_type": "float64",
+        "data_type": "float64",
+        "convert_info": null,
+        "fill_value": 0.0,
+        "value_required": false
+    },
+    {
+        "field": "Сумма операции с округлением",
+        "name": "operation_total_rounded",
+        "title": "Operation total rounded",
+        "raw_data_type": "float64",
+        "data_type": "float64",
+        "convert_info": null,
+        "fill_value": 0.0,
+        "value_required": false
+    },
+    {
+        "field": "Файл",
+        "name": "data_file",
+        "title": "File",
+        "raw_data_type": "string",
+        "data_type": "string",
+        "convert_info": null,
+        "fill_value": "Unknown",
+        "value_required": true
+    }
+]
+

@@ -1,0 +1,37 @@
+# syntax=docker/dockerfile:1
+
+FROM ubuntu:20.04
+
+LABEL description="Primary image for deploying the reveal app" \
+      maintainer="Norbert Nemesh <norbertnemesh@gmail.com>"
+
+ARG home
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Install all the things!
+RUN \
+    # prepare to install packages
+    apt-get update && \
+    # install apt-utils for graceful installation of other packages
+    apt-get install -y apt-utils && \
+    # env variable below needed because otherwise apt asks to choose our current time zone
+    apt-get install -y tzdata && \
+    # python package installer
+    apt-get install -y python3-pip && \
+    # http for humans
+    apt-get install -y python3-requests && \
+    # operations on columnar datasets
+    apt-get install -y python3-pandas && \
+    # Python library for creating interactive visualizations for modern web browsers
+    pip3 install bokeh && \
+    # clean up installation mess
+    apt-get clean && \
+    # Ensure that excessive files are deleted
+    rm -r /var/lib/apt/lists/*
+
+COPY config $home/config
+COPY resources $home/resources
+COPY src $home/src
+COPY run.sh $home/run.sh
+
+WORKDIR $home

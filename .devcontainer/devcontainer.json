@@ -1,0 +1,71 @@
+{
+    // A display name for the container.
+    "name": "reveal_dev",
+    // Required. Path or an ordered list of paths to Docker Compose files
+    // relative to the devcontainer.json file. Using an array is useful when
+    // extending your Docker Compose configuration. The order of the array
+    // matters since the contents of later files can override values set in
+    // previous ones. The default .env file is picked up from the root of
+    // the project, but you can use env_file in your Docker Compose
+    // file to specify an alternate location.
+    "dockerComposeFile": [
+        "../docker/compose-dev.yaml"
+    ],
+    // Required. The name of the service
+    // VS Code should connect to once running.
+    "service": "reveal_dev",
+    // An array of services in your Docker Compose configuration that should
+    // be started by VS Code. These will also be stopped when you disconnect
+    // unless "shutdownAction" is "none". Defaults to all services.
+    "runServices": [
+        "reveal_dev"
+    ],
+    // Indicates whether VS Code should stop the containers when the
+    // VS Code window is closed / shut down.
+    // Values are none and stopCompose (default).
+    // Does not apply to Codespaces.
+    "shutdownAction": "stopCompose",
+    // Sets the default path that VS Code should open when connecting to
+    // the container. Typically used with workspaceMount. Defaults to the
+    // automatic source code mount location. Only supported for Docker
+    // Compose in Codespaces and when using Clone Repository
+    // in Container Volume.
+    "workspaceFolder": "/home/norbert/reveal",
+    // A command string or list of command arguments to run inside the
+    // container after it is created. The commands execute from the
+    // workspaceFolder in the container. Use && in a string to execute
+    // multiple commands. For example, "yarn install" or
+    // "apt-get update && apt-get install -y curl".
+    // The array syntax ["yarn", "install"] will invoke the command
+    // (in this case yarn) directly without using a shell. It fires after
+    // your source code has been mounted, so you can also run shell
+    // scripts from your source tree. For example:
+    // bash scripts/install-dev-tools.sh. Not set by default.
+    "postCreateCommand": "",
+    // An array of extension IDs that specify the extensions that
+    // should be installed inside the container when it is created.
+    // Defaults to [].
+    "extensions": [
+        "aaron-bond.better-comments",
+        "akamud.vscode-theme-onelight",
+        "eamodio.gitlens",
+        "mads-hartmann.bash-ide-vscode",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode-remote.remote-containers",
+        "ms-vscode-remote.remote-ssh",
+        "ms-vscode-remote.remote-ssh-edit",
+        "ms-vscode.cpptools",
+        "mutantdino.resourcemonitor",
+        "njpwerner.autodocstring",
+        "PKief.material-icon-theme",
+        "rid9.datetime",
+        "tamasfe.even-better-toml",
+        "timonwong.shellcheck",
+        "trond-snekvik.simple-rst",
+        "vscodevim.vim",
+        "zhuangtongfa.material-theme"
+    ]
+}

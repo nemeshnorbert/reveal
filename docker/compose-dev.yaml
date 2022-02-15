@@ -1,0 +1,37 @@
+version: "3.7"
+
+services:
+    reveal_dev:
+        build:
+            context: .
+            dockerfile: Dockerfile-dev
+            args:
+                uid: 1000
+                gid: 1000
+                home: /home/${USER}
+                username: ${USERNAME}
+        ports:
+            - 5006:5006
+            - 8888:8888
+        image: reveal_dev
+        container_name: reveal_dev
+        user: norbert
+        volumes:
+            - /etc/group:/etc/group:ro
+            - /etc/passwd:/etc/passwd:ro
+            - /etc/shadow:/etc/shadow:ro
+            - /etc/sudoers.d:/etc/sudoers.d:ro
+            - ${PWD}:${HOME}/reveal
+            - ${HOME}/.bashrc:${HOME}/.bashrc
+            - ${HOME}/.bash_profile:${HOME}/.bash_profile
+            - ${HOME}/.gitconfig:${HOME}/.gitconfig
+            - ${HOME}/.tmux.conf:${HOME}/.tmux.conf
+            - ${HOME}/.vim:${HOME}/.vim
+            - ${HOME}/.vimrc:${HOME}/.vimrc
+            - ${HOME}/.ssh:${HOME}/.ssh
+            - ${HOME}/.jupyter:${HOME}/.jupyter
+            - ${HOME}/.docker_bash_history:${HOME}/.bash_history
+        env_file:
+            - ./.env
+        tty: true
+        stdin_open: true

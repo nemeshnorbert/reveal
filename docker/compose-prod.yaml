@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+    reveal_prod:
+        build:
+            context: ..
+            dockerfile: docker/Dockerfile-prod
+            args:
+                home: /root
+        ports:
+            - 5006:5006
+        image: reveal_prod
+        container_name: reveal_prod
+        env_file:
+            - ./.env
+        command: ["./run.sh"]
+

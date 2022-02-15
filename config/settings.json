@@ -1,0 +1,112 @@
+{
+    "server": {
+        "app_route": "/reveal_app",
+        "websocket_origins": [
+            "localhost:5006"
+        ]
+    },
+    "handler": {
+        "model": {
+            "read": {
+                "black_list_statuses": [
+                    "FAILED"
+                ]
+            },
+            "convert": {
+                "rates": {
+                    "database": {
+                    },
+                    "api": {
+                        "provider": "openexchangerates",
+                        "read_retries": 3
+                    }
+                }
+            },
+            "report": {
+                "max_overview_categories_count": 10
+            }
+        },
+        "view": {
+            "localizer": {
+                "default_locale_name": "en_EN.UTF-8"
+            },
+            "elements": {
+                "root": {
+                    "header": {
+                    },
+                    "controls_group": {
+                        "filters_group": {
+                            "start_date": {
+                            },
+                            "end_date": {
+                            },
+                            "category": {
+                            },
+                            "description": {
+                            },
+                            "card_number": {
+                            },
+                            "data_file": {
+                            }
+                        },
+                        "settings_group": {
+                            "currency": {
+                                "default": "RUB",
+                                "options": ["EUR", "RUB", "USD"]
+                            }
+                        },
+                        "upload_group": {
+                            "upload_button": {
+                                "file_types": [
+                                    ".xls"
+                                ]
+                            },
+                            "status_bar": {
+                            }
+                        }
+                    },
+                    "tabs_group": {
+                        "overview_tab": {
+                            "headline": {
+                              "income": {
+                              },
+                              "spending": {
+                              },
+                              "disposable_income": {
+                              }
+                            },
+                            "plot": {
+                                "income": {
+                                },
+                                "spending": {
+                                },
+                                "cards": {
+                                }
+                            }
+                        },
+                        "transactions_tab": {
+                            "plot": {
+                                "plot_mode_selector": {
+                                },
+                                "period_selector": {
+                                }
+                            }
+                        },
+                        "table_tab": {
+                            "operations_table": {
+                            }
+                        },
+                        "help_tab": {
+                            "help_table": {
+                            },
+                            "example_button": {
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "controller": {
+        }
+    }
+}

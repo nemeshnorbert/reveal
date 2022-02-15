@@ -1,0 +1,102 @@
+# syntax=docker/dockerfile:1
+
+FROM ubuntu:20.04
+
+LABEL description="Primary image for developing the reveal app" \
+      authors="Norbert Nemesh <norbertnemesh@gmail.com>"
+
+ARG uid
+ARG gid
+ARG username
+ARG home
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Install all the things!
+RUN \
+    # Create user's group
+    groupadd --gid $gid $username && \
+    # Create user
+    useradd --uid $uid --gid $gid -m $username && \
+    # give access for the user to the home directory
+    chown -R $uid:$gid $home && \
+    # prepare to install packages
+    apt-get update && \
+    # install apt-utils for graceful installation of other packages
+    apt-get install -y apt-utils && \
+    # give access to sudo
+    apt-get install -y sudo && \
+    # add user to sudoers
+    echo $username ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$username && \
+    # add safety latch
+    chmod 0440 /etc/sudoers.d/$username && \
+    # install tools being cut of in base image
+    yes | unminimize && \
+    # GNU C Library: National Language (locale) data [support]
+    apt-get install -y locales && \
+    # GNU C Library: Precompiled locale data
+    apt-get install -y locales-all && \
+    # enable man pages
+    apt-get install -y man-db && \
+    # env variable below needed because otherwise apt asks to choose our current time zone
+    apt-get install -y tzdata && \
+    # tools for building deb packages (g++, gcc, libc, make, ...)
+    apt-get install -y build-essential && \
+    # trace system calls and signals
+    apt-get install -y strace && \
+    # gnu debugger
+    apt-get install -y gdb && \
+    # compiler independent build tool
+    apt-get install -y cmake && \
+    # notorious text editor
+    apt-get install -y vim && \
+    # code version control
+    apt-get install -y git && \
+    # arbitrary TCP and UDP connections and listens
+    apt-get install -y netcat && \
+    # NET-3 networking toolkit
+    apt-get install -y net-tools && \
+    # secure remote host access
+    apt-get install -y ssh && \
+    # client server interaction via command line
+    apt-get install -y curl && \
+    # fancy process viewer
+    apt-get install -y htop && \
+    # terminal multiplexer
+    apt-get install -y tmux && \
+    # how tos on different unix tools
+    apt-get install -y tldr && \
+    # validate shell scripts on syntax errors
+    apt-get install -y shellcheck && \
+    # Sqlite 3 - embedded RDMS
+    apt-get install sqlite3 && \
+    # python3
+    apt-get install -y python3 && \
+    # tools for python development
+    apt-get install -y python3-dev && \
+    # python package installer
+    apt-get install -y python3-pip && \
+    # fancy python shell
+    pip3 install ipython && \
+    # A powerful interactive shell.
+    # DO NOT INSTALL jupyterlab. I tried it twice and both times it
+    # turned out to be useless
+    pip3 install jupyter && \
+    # http for humans
+    pip3 install requests && \
+    # Simple, powerful testing in Python3
+    pip3 install pytest && \
+    # python virtual environment creator
+    pip3 install virtualenv && \
+    # operations on columnar datasets
+    pip3 install pandas && \
+    # packge to read xls files (required by pandas)
+    pip3 install xlrd && \
+    # Python library for creating interactive visualizations for modern web browsers
+    pip3 install bokeh && \
+    # clean up installation mess
+    apt-get clean && \
+    # Ensure that excessive files are deleted
+    rm -r /var/lib/apt/lists/*
+
+WORKDIR $home
+

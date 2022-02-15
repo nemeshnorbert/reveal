@@ -1,0 +1,524 @@
+{
+    "app_literals": {
+        "header_control_title": {
+            "en_EN.UTF-8": {
+                "value": "Analyze income and spending from your personal Tinkoff account report"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Анализируйте доходы и расходы на вашем банковском счету в Тинькофф"
+            }
+        },
+        "filters_group_title": {
+            "en_EN.UTF-8": {
+                "value": "Filters"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Фильтры"
+            }
+        },
+        "filters_group_start_date_control_title": {
+            "en_EN.UTF-8": {
+                "value": "Start date: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Начало периода: "
+            }
+        },
+        "filters_group_end_date_control_title": {
+            "en_EN.UTF-8": {
+                "value": "End date: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Конец периода: "
+            }
+        },
+        "filters_group_category_control_title": {
+            "en_EN.UTF-8": {
+                "value": "Categories:"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Категории:"
+            }
+        },
+        "filters_group_description_control_title": {
+            "en_EN.UTF-8": {
+                "value": "Description:"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Описание:"
+            }
+        },
+        "filters_group_card_number_control_title": {
+            "en_EN.UTF-8": {
+                "value": "Cards: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Карты:"
+            }
+        },
+        "filters_group_data_file_control_title": {
+            "en_EN.UTF-8": {
+                "value": "Files: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Файлы:"
+            }
+        },
+        "settings_group_title": {
+            "en_EN.UTF-8": {
+                "value": "Settings"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Настройки"
+            }
+        },
+        "settings_group_currency_control_title": {
+            "en_EN.UTF-8": {
+                "value": "Currency: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Валюта:"
+            }
+        },
+        "overview_tab_title": {
+            "en_EN.UTF-8": {
+                "value": "Overview"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Обзор"
+            }
+        },
+        "overview_tab_income_headline_title": {
+            "en_EN.UTF-8": {
+                "value": "Income: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Доходы: "
+            }
+        },
+        "overview_tab_spending_headline_title": {
+            "en_EN.UTF-8": {
+                "value": "Spending: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Траты: "
+            }
+        },
+        "overview_tab_disposable_income_headline_title": {
+            "en_EN.UTF-8": {
+                "value": "Disposable income: "
+            },
+            "ru_RU.UTF-8": {
+                "value": "Чистый доход: "
+            }
+        },
+        "overview_tab_income_plot_title": {
+            "en_EN.UTF-8": {
+                "value": "Income by category"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Доход по категориям"
+            }
+        },
+        "overview_tab_spending_plot_title": {
+            "en_EN.UTF-8": {
+                "value": "Spending by category"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Расходы по категориям"
+            }
+        },
+        "transactions_tab_title": {
+            "en_EN.UTF-8": {
+                "value": "Transactions"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Транзакции"
+            }
+        },
+        "transactions_tab_plot_title": {
+            "en_EN.UTF-8": {
+                "value": "Income and spending"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Доходы и расходы"
+            }
+        },
+        "transactions_tab_plot_income_label": {
+            "en_EN.UTF-8": {
+                "value": "Income"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Доходы"
+            }
+        },
+        "transactions_tab_plot_spending_label": {
+            "en_EN.UTF-8": {
+                "value": "Spending"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Расходы"
+            }
+        },
+        "transactions_tab_mode_selector_title": {
+            "en_EN.UTF-8": {
+                "value": "Plot mode:"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Режим отображения:"
+            }
+        },
+        "transactions_tab_mode_selector_incremental_option_title": {
+            "en_EN.UTF-8": {
+                "value": "Incremental"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Изменение"
+            }
+        },
+        "transactions_tab_mode_selector_cumulative_option_title": {
+            "en_EN.UTF-8": {
+                "value": "Cumulative"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Сумма"
+            }
+        },
+        "transactions_tab_period_selector_title": {
+            "en_EN.UTF-8": {
+                "value": "Period:"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Период:"
+            }
+        },
+        "transactions_tab_period_selector_seconds_option_title": {
+            "en_EN.UTF-8": {
+                "value": "Seconds"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Секунды"
+            }
+        },
+        "transactions_tab_period_selector_days_option_title": {
+            "en_EN.UTF-8": {
+                "value": "Days"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Дни"
+            }
+        },
+        "transactions_tab_period_selector_months_option_title": {
+            "en_EN.UTF-8": {
+                "value": "Months"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Месяцы"
+            }
+        },
+        "transactions_tab_period_selector_years_option_title": {
+            "en_EN.UTF-8": {
+                "value": "Years"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Годы"
+            }
+        },
+        "transactions_tab_plot_tooltip_total_title": {
+            "en_EN.UTF-8": {
+                "value": "Total"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Всего"
+            }
+        },
+        "transactions_tab_plot_tooltip_date_title": {
+            "en_EN.UTF-8": {
+                "value": "Date"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Дата"
+            }
+        },
+        "transactions_tab_plot_tooltip_data_file_title": {
+            "en_EN.UTF-8": {
+                "value": "Data file"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Файл"
+            }
+        },
+        "transactions_tab_plot_tooltip_category_title": {
+            "en_EN.UTF-8": {
+                "value": "Category"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Категория"
+            }
+        },
+        "transactions_tab_plot_tooltip_description_title": {
+            "en_EN.UTF-8": {
+                "value": "Description"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Описание"
+            }
+        },
+        "overview_tab_cards_plot_title": {
+            "en_EN.UTF-8": {
+                "value": "Income and spending by card"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Доходы и расходы и по картам"
+            }
+        },
+        "overview_tab_cards_plot_income_label_title": {
+            "en_EN.UTF-8": {
+                "value": "Income"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Доходы"
+            }
+        },
+        "overview_tab_cards_plot_spending_label_title": {
+            "en_EN.UTF-8": {
+                "value": "Spending"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Расходы"
+            }
+        },
+        "overview_tab_cards_plot_tooltip_comment": {
+            "en_EN.UTF-8": {
+                "value": "Total"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Всего"
+            }
+        },
+        "table_tab_title": {
+            "en_EN.UTF-8": {
+                "value": "Operations"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Операции"
+            }
+        },
+        "help_tab_title": {
+            "en_EN.UTF-8": {
+                "value": "Help"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Помощь"
+            }
+        },
+        "help_tab_description": {
+            "en_EN.UTF-8": {
+                "value": "Upload you Tinkoff account report via button in the bottom left corner of the window. You may upload multiple files of the same type. Each file must have tabular format. For more details see the columns description below."
+            },
+            "ru_RU.UTF-8": {
+                "value": "Загрузите выписку из банка Тинькофф нажав кнопку в левом нижнем углу окна. Вы можете загрузить несколько файлов одного типа. Каждый файл должен иметь табличный формат. Ниже приведено более подробное описание формата таблицы"
+            }
+        },
+        "help_tab_table_field_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Column name"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Имя колонки"
+            }
+        },
+        "help_tab_table_data_type_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Data type"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Тип данных"
+            }
+        },
+        "help_tab_table_value_required_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Value required"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Значение обязательно"
+            }
+        },
+        "upload_group_title": {
+            "en_EN.UTF-8": {
+                "value": "Upload files"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Загрузить файлы"
+            }
+        },
+        "example_button_label": {
+            "en_EN.UTF-8": {
+                "value": "Load example"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Загрузить пример"
+            }
+        },
+        "status_bar_ready_title": {
+            "en_EN.UTF-8": {
+                "value": "Status: Ready"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Состояние: Готовo"
+            }
+        },
+        "status_bar_loading_title": {
+            "en_EN.UTF-8": {
+                "value": "Status: Loading..."
+            },
+            "ru_RU.UTF-8": {
+                "value": "Состояние: Загружается..."
+            }
+        },
+        "status_bar_loading_exchange_rates_title": {
+            "en_EN.UTF-8": {
+                "value": "Status: Loading exchange rates..."
+            },
+            "ru_RU.UTF-8": {
+                "value": "Состояние: Загружаются обменные курсы..."
+            }
+        },
+        "status_bar_load_successful_title": {
+            "en_EN.UTF-8": {
+                "value": "Status: Load successful"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Состояние: Загрузка закончена"
+            }
+        },
+        "operation_date_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Operation date"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Дата операции"
+            }
+        },
+        "payment_date_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Payment date"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Дата платежа"
+            }
+        },
+        "card_number_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Card number"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Номер карты"
+            }
+        },
+        "status_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Status"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Статус"
+            }
+        },
+        "operation_total_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Operation total"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Сумма операции"
+            }
+        },
+        "operation_currency_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Operation currency"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Валюта операции"
+            }
+        },
+        "payment_total_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Payment total"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Сумма платежа"
+            }
+        },
+        "payment_currency_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Payment currency"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Валюта платежа"
+            }
+        },
+        "cashback_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Cashback"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Кэшбэк"
+            }
+        },
+        "category_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Category"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Категория"
+            }
+        },
+        "mcc_code_field_title": {
+            "en_EN.UTF-8": {
+                "value": "MCC"
+            },
+            "ru_RU.UTF-8": {
+                "value": "МСС"
+            }
+        },
+        "description_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Description"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Описание"
+            }
+        },
+        "bonus_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Bonus"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Бонус"
+            }
+        },
+        "moneybox_rounding_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Moneybox rounding"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Округление на инвесткопилку"
+            }
+        },
+        "operation_total_rounded_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Operations total rounded"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Сумма операций с округлением"
+            }
+        },
+        "data_file_field_title": {
+            "en_EN.UTF-8": {
+                "value": "Data file"
+            },
+            "ru_RU.UTF-8": {
+                "value": "Файл"
+            }
+        }
+    }
+}
