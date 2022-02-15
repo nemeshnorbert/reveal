@@ -3,7 +3,7 @@
 A bokeh application for analyzing your transactions from Tinkoff bank account report
 
 ## Requirements
-Docker, docker-compose, browser
+Docker, docker-compose, browser, git-lfs
 
 ## Installation
 Run as dev
